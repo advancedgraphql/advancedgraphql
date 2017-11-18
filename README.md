@@ -1,8 +1,14 @@
-# My Awesome Book
+# Advanced GraphQL
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+* Live queries
+* Schema stitching
+* Error handling
+* Server-side stuff
+* HTTP handling
+* Codegen
+* Semantic web
+* Mobile clients
+* Pagination
 
 
-
-ok
 
