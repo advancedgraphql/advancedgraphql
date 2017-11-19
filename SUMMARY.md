@@ -6,16 +6,25 @@
 
 * [Introduction]()
 * [Scenarios](scenarios.md)
+  * [Local GraphQL Schema]()
+  * [Remote GraphQL Schema]()
+  * [Extend Remote GraphQL Schema]()
+  * [Extend Local Schema with Remote Schema]()
   * [Merge Schemas](scenarios/merge-schemas.md)
-* [GraphQL Native]()
+  * [REST Wrapper]()
 * [Schema Transformation](schema-transformation.md)
 * [Schema Stitching]()
 * [Schema Federation & Reuse]()
+* [Optimization Strategies]()
+  * [Caching]()
+  * [Batching (DataLoader)]()
+  * [HTTP Layers]()
 * [Libraries & Frameworks]()
   * [graphql-remote]()
   * [graphql-tools]()
   * [qewl]()
-* [Tooling]()
+* [Subscriptions]()
+* [Testing / Debugging]()
 
 ## Subscriptions
 
