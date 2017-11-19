@@ -12,6 +12,9 @@
 * [Schema Stitching]()
 * [Schema Federation & Reuse]()
 * [Libraries & Frameworks]()
+  * [graphql-remote]()
+  * [graphql-tools]()
+  * [qewl]()
 * [Tooling]()
 
 ## Subscriptions
