@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "gitbook build"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
