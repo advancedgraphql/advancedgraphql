@@ -1,9 +1,13 @@
 {
   "scripts": {
-    "build": "gitbook build",
-    "start": "gitbook serve"
+    "prepare": "gitbook install",
+    "build": "npm run prepare && gitbook build",
+    "start": "npm run prepare && gitbook serve"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-custom-favicon": "0.0.4"
   }
 }
