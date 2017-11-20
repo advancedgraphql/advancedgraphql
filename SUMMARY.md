@@ -12,8 +12,8 @@
   * [Extend Local Schema with Remote Schema]()
   * [Merge Schemas](./graphql-gateway/scenarios/merge-schemas.md) -->
 * [Schema Transformation](./graphql-gateway/schema-transformation.md)
-* [Schema Stitching]()
-* [Schema Federation & Reuse]()
+* [Schema Stitching](./graphql-gateway/schema-stitching.md)
+* [Schema Federation]()
 * [Optimization Strategies]()
   * [Caching]()
   * [Batching (DataLoader)]()

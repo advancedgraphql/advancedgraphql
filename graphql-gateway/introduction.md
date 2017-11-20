@@ -19,7 +19,7 @@ In the following chapters, you'll learn about specific patterns, best practices 
 
 ## The GraphQL Schema
 
-The core component of every GraphQL server is the _schema_. It defines the API of the server by exposing certain operations to client applications.
+The core component of every GraphQL server is the [_schema_](https://blog.graph.cool/graphql-server-basics-the-schema-ac5e2950214e). It defines the API of the server by exposing certain operations to client applications.
 
 GraphQL schemas can be expressed in the [Schema Definition Language](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51) (SDL). Here is a simple example of a schema that allows for a simple `hello` query:
 

@@ -87,8 +87,7 @@ type Query {
 
 extend type Repository {
   trendingRank: Int
-}
-`
+}`
 
 const resolvers = {
   Query: {
@@ -114,5 +113,7 @@ server.start(() => console.log('Server is running on localhost:3000'))
 ```
 
 ## 4. Extend Local Schema with Remote Schema
+
+
 
 ## 5. Unify/Merge Schemas
