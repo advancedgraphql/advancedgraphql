@@ -46,7 +46,7 @@ This is where we can introduce the difference between _structure_ and _behaviour
 
 To complete our setup and enable [execution](http://facebook.github.io/graphql/October2016/#sec-Execution) of the above query, we now need to make sure the resolver for the `hello` field on the `Query` type is implemented.
 
-[GraphQL.js](http://graphql.org/graphql-js/) provides a _GraphQL execution engine_, a tool allowing you to execute queries and mutations against a schema if resolvers are available. Here is a simple implementation:
+[GraphQL.js](http://graphql.org/graphql-js/) provides a _GraphQL execution engine_, a tool allowing you to execute queries and mutations against a schema if resolvers are available. Here is a simple example:
 
 ```js
 import { 
