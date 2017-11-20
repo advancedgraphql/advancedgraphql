@@ -13,7 +13,7 @@ In fact, even when building GraphQL Native apps, usage of a GraphQL gateway can 
 
 In the diagram, you see a GraphQL API gateway sitting in front of two GraphQL Native services, as well as one legacy system. 
 
-The benefit of this architecture is that client applications will be able to talk a single, coherent GraphQL API instead of having to deal with multiple endpoints and fetching data from several sources. The gateway unifies these APIs and hides the complexity of the data fetching process.
+The benefit of this architecture is that client applications will be able to talk to a single, coherent GraphQL API instead of having to deal with multiple endpoints and fetching data from several sources. The gateway unifies these APIs and hides the complexity of the data fetching process.
 
 In the following chapters, you'll learn about specific patterns, best practices and available tooling for building GraphQL gateways.
 
