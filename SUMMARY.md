@@ -13,11 +13,11 @@
   * [Merge Schemas](./graphql-gateway/scenarios/merge-schemas.md) -->
 * [Schema Transformation](./graphql-gateway/schema-transformation.md)
 * [Schema Stitching](./graphql-gateway/schema-stitching.md)
-* [Schema Federation]()
-* [Optimization Strategies]()
+* [Schema Federation](./graphql-gateway/schema-federation.md)
+* [Batching (DataLoader)](./graphql-gateway/batching-dataloader.md)
+  <!-- * [Optimization Strategies](./graphql-gateway/optimization-strategies.md)
   * [Caching]()
-  * [Batching (DataLoader)]()
-  * [HTTP Layers]()
+  * [HTTP Layers]() -->
 * [Libraries & Frameworks]()
   * [graphql-remote]()
   * [graphql-tools]()
