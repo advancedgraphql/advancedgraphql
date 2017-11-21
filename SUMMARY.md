@@ -4,7 +4,7 @@
 
 ## GraphQL Gateway
 
-* [Introduction](./graphql-gateway/introduction.md)
+<!-- * [Introduction](./graphql-gateway/introduction.md) -->
 <!-- * [Scenarios](./graphql-gateway/scenarios.md)
   * [Local GraphQL Schema]()
   * [Remote GraphQL Schema]()
@@ -18,14 +18,13 @@
   <!-- * [Optimization Strategies](./graphql-gateway/optimization-strategies.md)
   * [Caching]()
   * [HTTP Layers]() -->
-* [Libraries & Frameworks]()
+* [Libraries & Frameworks](./graphql-gateway/libraries-frameworks.md)
   * [graphql-remote]()
   * [graphql-tools]()
   * [qewl]()
 * [Subscriptions]()
 * [Testing / Debugging]()
 * [REST Wrapper]()
-
 
 <!-- 
 ## Subscriptions
@@ -48,4 +47,5 @@
 
 * [Semantic web]()
 * [Live Queries]() 
+* [Custom Directives]() 
 -->
