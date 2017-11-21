@@ -6,7 +6,16 @@ The term _schema stitching_ refers to the act of combining (at least) two GraphQ
 
 Merging two (or more) schemas means forming the _union_ of their respective types. If there are naming conflicts between types of the merged schemas, additional information needs to be provided to determine how these conflicts should be resolved. [`graphql-tools`](https://github.com/apollographql/graphql-tools) provides an API for merging schemas: [`mergeSchemas`](https://www.apollographql.com/docs/graphql-tools/schema-stitching.html#mergeSchemas).
 
+There are four different examples explaining different use cases for schema merging:
 
+- [Merging schemas without naming conflicts](./schema-stitching/ex1.md)
+- [Merging schemas with naming conflicts on their root fields](./schema-stitching/ex2.md)
+- [Merging schemas with naming conflicts for types](./schema-stitching/ex3.md)
+- [Merging an executable with a non-executable schema](./schema-stitching/ex4.md)
+
+## Picking parts of a schema
+
+Another use case for schema stitching is when only certain parts of a schema are selectively added to another schema.
 
 <!-- 
 
