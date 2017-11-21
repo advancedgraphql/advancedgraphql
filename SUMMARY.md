@@ -13,6 +13,11 @@
   * [Merge Schemas](./graphql-gateway/scenarios/merge-schemas.md) -->
 * [Schema Transformation](./graphql-gateway/schema-transformation.md)
 * [Schema Stitching](./graphql-gateway/schema-stitching.md)
+  * [Merging schemas without conflicts](./graphql-gateway/schema-stitching/ex1.md)
+  * [Merging schemas with conflicts for root fields](./graphql-gateway/schema-stitching/ex2.md)
+  * [Merging schemas with conflicts for types](./graphql-gateway/schema-stitching/ex3.md)
+  * [Merging an _executable_ with a _non-executable_ schema](./graphql-gateway/schema-stitching/ex4.md)
+
 * [Schema Federation](./graphql-gateway/schema-federation.md)
 * [Batching (DataLoader)](./graphql-gateway/batching-dataloader.md)
   <!-- * [Optimization Strategies](./graphql-gateway/optimization-strategies.md)
@@ -47,5 +52,5 @@
 
 * [Semantic web]()
 * [Live Queries]() 
-* [Custom Directives]() 
+* [Custom Directives]()
 -->
