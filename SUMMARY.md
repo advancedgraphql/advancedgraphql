@@ -2,7 +2,7 @@
 
 * [Advanced GraphQL Overview](README.md)
 
-## GraphQL Gateway
+## Topics
 
 * [Schema Transformation](./graphql-gateway/schema-transformation.md)
 * [Schema Stitching](./graphql-gateway/schema-stitching.md)
@@ -13,7 +13,7 @@
 * [Schema Federation](./graphql-gateway/schema-federation.md)
 * [Batching (DataLoader)](./graphql-gateway/batching-dataloader.md)
 * [Libraries & Frameworks](./graphql-gateway/libraries-frameworks.md)
-* [Subscriptions](./graphql-gateway/subscriptions.md)
+<!-- * [Subscriptions](./graphql-gateway/subscriptions.md) -->
 
 <!-- 
 ## Subscriptions
