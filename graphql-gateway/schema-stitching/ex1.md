@@ -1,6 +1,8 @@
 
 #### Example 1: Merging schemas without naming conflicts
 
+> A practical example for this scenario can be found [here](https://github.com/advancedgraphql/schema-stitching/tree/master/merge-schemas-1).
+
 In its simplest form, schema stitching might simply mean to _merge_ two schemas that don't have any naming conflicts. Consider the following two schemas, `A` and `B`:
 
 **Schema `A`**:

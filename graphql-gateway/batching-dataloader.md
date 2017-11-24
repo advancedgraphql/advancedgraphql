@@ -1,10 +1,12 @@
 # Batching (DataLoader)
 
+## Overview
+
 A GraphQL query is resolved by calling the resolver functions for the fields inside the query. For example, consider the following schema:
 
 ```graphql
 type Query {
-  user: User
+  user(id: ID!): User
 }
 
 type User {
@@ -25,7 +27,7 @@ const resolvers = {
 }
 ```
 
-Now assume a GraphQL server receives the following query:
+Consider the situation where a GraphQL server now receives the following query:
 
 ```graphql
 query {
@@ -51,38 +53,42 @@ Here is what the resolver implementation looks ike:
 ```js
 const resolvers = {
   Query: {
-    users:  async (_, args) => {
+    users: async (_, args) => {
       const { ids } = args
       const users = []
-      for (id in ids) {
+      for (const id of ids) {
         const user = await fetchUserById(id) // hit the database
         users.push(user)
-      }
+      })
       return users
     }
   }
 }
 ```
 
-This time the performance trap is very apparent. A long list of IDs might cause our server to hit the database several times, each database access involves an actual database query and the corresponding performance penalty that comes along with it.
+This time the performance trap is very apparent. A long list of IDs might cause the server to hit the database several times, each database access involves an actual database query and the corresponding performance penalty that comes along with it.
 
-The optimization strategy to be applied in these cases is called _batching_. Facebook's [DataLoader](https://github.com/facebook/dataloader) library solves this problem by "collecting" all resolver calls and executing them all at once. In our scenario, this would mean that all the individual database queries would be collected and finally be executed as a single one.
+The optimization strategy to be applied in these cases is called _batching_: Instead of hitting the database multiple times, it's preferred to "collect" all database queries and send them as a single one. The database invokations are now _batched_.
 
-<!-- Now assume the API also had `Article`s with `Comment`s to ask for and allowed for this query:
+## DataLoader
 
-```graphql
-query {
-  article(title: "GraphQL is great") {
-    comments {
-      text
-      writtenBy {
-        name
-      }
-    }
-  }
-}
-``` 
+Facebook's [`DataLoader`](https://github.com/facebook/dataloader) library implements the above approach to batching by leveraging the [`process.nextTick()`](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/) function provided by Node.js.
 
-In this query, we're asking for an article with a specific title, its comments and the name's of the users who wrote them. 
+> **Note**: The `DataLoader` implements a relatively simple but very effective batching pattern. If you want to learn how it works in detail, watch this excellent video by Lee Byron: [DataLoder - Source code walktrough](https://www.youtube.com/watch?v=OQTnXNCDywA)
 
-Now, it might be the case that the article has exactly five comments and all of them are written by the same user! The GraphQL server's execution engine -->
+For every resource (e.g. users) that can be loaded in batches, one `DataLoader` can be instantiated with a _batch function_ that knows how to fetch multiple instances of this resource.
+
+The batch function needs to fulfill two simple requirements:
+
+1. It must takes an array of keys as input arguments. Each key identifies one instance of the resource to be loaded.
+1. It must return an array of Promises. Each Promise must resolve to an instance of the corresponding resource (or reject). The length and order of the input array needs to be retained in the output array!
+
+Considering the example from above, the batch function would provide a way to take multiple user IDs at once and send them as a single query to the database in order to load the corresponding user instances.
+
+> [Here](https://github.com/advancedgraphql/batching/tree/master/batching-1) is a simple example demonstrating that technique.
+
+## BatchedGraphQLClient
+
+When resolvers don't retrieve their data from a database but rather from another GraphQL API (which is a common scenario in [schema stitching](./schema-stitching.md)), the `DataLoader` pattern can be applied as well.
+
+To see what this looks like in practice, check out the [`BatchedGraphQLClient`](https://github.com/graphcool/batched-graphql-request/blob/master/src/index.ts#L7) where this technique is applied.

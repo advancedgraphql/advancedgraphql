@@ -15,7 +15,7 @@ There are four examples explaining different use cases for schema merging:
 
 ## Picking parts of a schema
 
-Another use case for schema stitching is when only certain parts of a schema are selectively added to another schema.
+Another use case for schema stitching is when only certain parts of a schema are selectively added to another schema. This feature is currently still experimental - a first API for it is available [here](https://github.com/graphcool/graphql-remote/blob/master/src/collectTypeDefs.ts).
 
 <!-- 
 
@@ -33,4 +33,6 @@ type Query {
 
 Obviously, this schema definition is incomplete: the `Repository` type is missing. Now, GitHub's public GraphQL API does have a `Repository` type, so one thing you can do now is grab this type from the GitHub API and include it in your schema!
 
-This is precisely what [`graphql-remote`](https://github.com/graphcool/graphql-remote) allows you to do with `collectTypeDefs`. -->
+This is precisely what [`graphql-remote`](https://github.com/graphcool/graphql-remote) allows you to do with `collectTypeDefs`. 
+
+-->

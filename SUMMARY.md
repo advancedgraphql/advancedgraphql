@@ -23,12 +23,12 @@
   * [Caching]()
   * [HTTP Layers]() -->
 * [Libraries & Frameworks](./graphql-gateway/libraries-frameworks.md)
-  * [graphql-remote]()
+  <!-- * [graphql-remote]()
   * [graphql-tools]()
-  * [qewl]()
+  * [qewl]() -->
 * [Subscriptions]()
-* [Testing / Debugging]()
-* [REST Wrapper]()
+<!-- * [Testing / Debugging]()
+* [REST Wrapper]() -->
 
 <!-- 
 ## Subscriptions

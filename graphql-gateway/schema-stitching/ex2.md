@@ -1,6 +1,8 @@
 
 #### Example 2: Merging schemas with naming conflicts on their root fields
 
+> A practical example for this scenario can be found [here](https://github.com/advancedgraphql/schema-stitching/tree/master/merge-schemas-2).
+
 Consider the following two schemas:
 
 **Schema `A`**:
