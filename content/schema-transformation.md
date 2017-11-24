@@ -47,7 +47,7 @@ const transformedSchema = transformSchema(schema, {
 
 As you can see, you can call the `transformSchema` function and pass in the original schema along with a set of _rules_. Each rule refers to a field on one of the GraphQL types defined in the schema and specifies whether it should be _visible_ or not by providing a boolean value.
 
-> Note that it is currently not possible to provide a function which _returns_ a boolean value instead of the boolean value directly.
+> Note that it is currently not possible to [provide a function which _returns_ a boolean value](https://github.com/graphcool/graphql-transform-schema/issues/9) instead of the boolean value directly.
 
 The resulting `transformedSchema` now doesn't expose the `allUsers` query and `deleteUser` mutation any more. Written in the SDL, the schema would now look as follows:
 

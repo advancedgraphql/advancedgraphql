@@ -4,8 +4,6 @@ There are several tools that help you in building a GraphQL gateway server. In t
 
 ## graphql-yoga
 
-### Overview
-
 [`graphql-yoga`](https://github.com/graphcool/graphql-yoga/) is a simple GraphQL server based on various other libraries like [`express`](https://github.com/expressjs/express), [`graphql-tools`](https://github.com/apollographql/graphql-tools), [`apollo-server`](https://github.com/apollographql/apollo-server), [`graphql-subscriptions`](https://github.com/apollographql/graphql-subscriptions) and more.
 
 Its main goal is to provide a convenience API for creating GraphQL servers by choosing sensible defaults for the underlying configuration.
