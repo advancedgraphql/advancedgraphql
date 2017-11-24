@@ -8,12 +8,12 @@ If you're not yet familiar with GraphQL, get started on [How to GraphQL](https:/
 
 ## Overview
 
-* [Schema Transformation](./graphql-gateway/schema-transformation.md): Hiding fields from a GraphQL schema or hooking into its resolvers
-* [Schema Stitching](./graphql-gateway/schema-stitching.md): Combining multiple GraphQL schemas into a single one
-  * [No conflicts](./graphql-gateway/schema-stitching/ex1.md)
-  * [Conflicts for root fields](./graphql-gateway/schema-stitching/ex2.md)
-  * [Conflicts for types](./graphql-gateway/schema-stitching/ex3.md)
-  * [Merging executable & non-executable schemas](./graphql-gateway/schema-stitching/ex4.md)
-* [Schema Federation](./graphql-gateway/schema-federation.md): Managing GraphQL schemas within an organization
-* [Batching (DataLoader)](./graphql-gateway/batching-dataloader.md): Optimizing GraphQL execution
-* [Libraries & Frameworks](./graphql-gateway/libraries-frameworks.md): An overview of available tooling for building GraphQL servers
+* [Schema Transformation](./content/schema-transformation.md): Hiding fields from a GraphQL schema or hooking into its resolvers
+* [Schema Stitching](./content/schema-stitching.md): Combining multiple GraphQL schemas into a single one
+  * [No conflicts](./content/schema-stitching/ex1.md)
+  * [Conflicts for root fields](./content/schema-stitching/ex2.md)
+  * [Conflicts for types](./content/schema-stitching/ex3.md)
+  * [Merging executable & non-executable schemas](./content/schema-stitching/ex4.md)
+* [Schema Federation](./content/schema-federation.md): Managing GraphQL schemas within an organization
+* [Batching (DataLoader)](./content/batching-dataloader.md): Optimizing GraphQL execution
+* [Libraries & Frameworks](./content/libraries-frameworks.md): An overview of available tooling for building GraphQL servers

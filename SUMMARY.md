@@ -4,16 +4,16 @@
 
 ## Topics
 
-* [Schema Transformation](./graphql-gateway/schema-transformation.md)
-* [Schema Stitching](./graphql-gateway/schema-stitching.md)
-  * [No conflicts](./graphql-gateway/schema-stitching/ex1.md)
-  * [Conflicts for root fields](./graphql-gateway/schema-stitching/ex2.md)
-  * [Conflicts for types](./graphql-gateway/schema-stitching/ex3.md)
-  * [Merging executable & non-executable schemas](./graphql-gateway/schema-stitching/ex4.md)
-* [Schema Federation](./graphql-gateway/schema-federation.md)
-* [Batching (DataLoader)](./graphql-gateway/batching-dataloader.md)
-* [Libraries & Frameworks](./graphql-gateway/libraries-frameworks.md)
-<!-- * [Subscriptions](./graphql-gateway/subscriptions.md) -->
+* [Schema Transformation](./content/schema-transformation.md)
+* [Schema Stitching](./content/schema-stitching.md)
+  * [No conflicts](./content/schema-stitching/ex1.md)
+  * [Conflicts for root fields](./content/schema-stitching/ex2.md)
+  * [Conflicts for types](./content/schema-stitching/ex3.md)
+  * [Merging executable & non-executable schemas](./content/schema-stitching/ex4.md)
+* [Schema Federation](./content/schema-federation.md)
+* [Batching (DataLoader)](./content/batching-dataloader.md)
+* [Libraries & Frameworks](./content/libraries-frameworks.md)
+<!-- * [Subscriptions](./content/subscriptions.md) -->
 
 <!-- 
 ## Subscriptions
