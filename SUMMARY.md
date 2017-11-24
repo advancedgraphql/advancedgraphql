@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Advanced GraphQL Overview](README.md)
+* [Overview](README.md)
 
 ## Topics
 

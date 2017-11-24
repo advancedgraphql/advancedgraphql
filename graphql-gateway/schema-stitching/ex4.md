@@ -1,6 +1,7 @@
 #### Example 4: Merging an _executable_ with a _non-executable_ schema
 
-> A practical example for this scenario can be found [here](https://github.com/advancedgraphql/schema-stitching/tree/master/merge-schemas-4).
+<a href="https://github.com/advancedgraphql/schema-stitching/tree/master/merge-schemas-4" target="_blank"><img src="https://imgur.com/sj8HlZO.png" width="200" /></a>
+
 
 Another option when merging schemas is to take an existing _executable_ schema and add type definitions to it. Then, when merging the schemas the resolvers of the new type definitions can _delegate_ to the existing executable schema.
 

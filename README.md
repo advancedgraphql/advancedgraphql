@@ -4,11 +4,9 @@
 
 If you're not yet familiar with GraphQL, get started on [How to GraphQL](https://www.howtographql.com/) or read the official [GraphQL documentation](http://www.graphql.org/).
 
-> Note that this website is still work in progress. If you have ideas for content you would like to see on this page, or want to contribute content yourself, please [get in touch](mailto:hello@graph.cool)!
+> Note that this website is still work in progress. If you have ideas for content you would like to see on it, or want to contribute yourself, please [get in touch](mailto:hello@graph.cool)!
 
-## Topics
-
-Here is an overview of the available topics:
+## Overview
 
 * [Schema Transformation](./graphql-gateway/schema-transformation.md): Hiding fields from a GraphQL schema or hooking into its resolvers
 * [Schema Stitching](./graphql-gateway/schema-stitching.md): Combining multiple GraphQL schemas into a single one
