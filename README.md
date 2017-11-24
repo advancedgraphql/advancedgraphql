@@ -16,6 +16,6 @@ Here is an overview of the available topics:
   * [Conflicts for root fields](./graphql-gateway/schema-stitching/ex2.md)
   * [Conflicts for types](./graphql-gateway/schema-stitching/ex3.md)
   * [Merging executable & non-executable schemas](./graphql-gateway/schema-stitching/ex4.md)
-* [Schema Federation](./graphql-gateway/schema-federation.md): Managing GraphQL schemas within an organization (with respect to ownership, processes, development,...)
+* [Schema Federation](./graphql-gateway/schema-federation.md): Managing GraphQL schemas within an organization
 * [Batching (DataLoader)](./graphql-gateway/batching-dataloader.md): Optimizing GraphQL execution
 * [Libraries & Frameworks](./graphql-gateway/libraries-frameworks.md): An overview of available tooling for building GraphQL servers
