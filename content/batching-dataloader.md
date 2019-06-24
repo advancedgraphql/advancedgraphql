@@ -74,7 +74,7 @@ The optimization strategy to be applied in these cases is called _batching_: Ins
 
 Facebook's [`DataLoader`](https://github.com/facebook/dataloader) library implements the above approach to batching by leveraging the [`process.nextTick()`](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/) function provided by Node.js.
 
-> **Note**: The `DataLoader` implements a relatively simple but very effective batching pattern. If you want to learn how it works in detail, watch this excellent video by Lee Byron: [DataLoder - Source code walktrough](https://www.youtube.com/watch?v=OQTnXNCDywA)
+> **Note**: The `DataLoader` implements a relatively simple but very effective batching pattern. If you want to learn how it works in detail, watch this excellent video by Lee Byron: [DataLoader - Source code walkthrough](https://www.youtube.com/watch?v=OQTnXNCDywA)
 
 For every resource (e.g. users) that can be loaded in batches, one `DataLoader` can be instantiated with a _batch function_ that knows how to fetch multiple instances of this resource.
 
